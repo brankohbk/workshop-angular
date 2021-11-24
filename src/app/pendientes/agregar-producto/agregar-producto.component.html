@@ -1,0 +1,16 @@
+<h3>Ingresar producto</h3>
+<form (ngSubmit)="agregar()">
+  <input
+    type="text"
+    placeholder="Producto"
+    name="nombre"
+    [(ngModel)]="nuevoProducto.nombre"
+  />
+  <input
+    type="number"
+    placeholder="Precio"
+    name="precio"
+    [(ngModel)]="nuevoProducto.precio"
+  />
+  <button type="submit">Agregar</button>
+</form>
